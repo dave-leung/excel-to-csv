@@ -1,29 +1,25 @@
 # excel-to-csv
-Convert Excel files to csv format using Python library. With csv format you can use it for data analysis.
+Convert several Excel files in Google Cloud Storage to csv format using Python library in one time. Then you may use it for loading into Google BigQuery
 
 ## Insatllation
 
-*jupyter* - web application for creating and sharing computational documents
-
-*openpyxl* - Python library to read/write Excel
-
-*xlrd* - Python library for reading data and formatting information from Excel files
+*google-cloud-storage* - web application for creating and sharing computational documents
 
 *pandas* - Python library for data analysis and manipulation
 
 ```bash
-pip3 install jupyter
-pip3 install openpyxl
-pip3 install xlrd
 pip3 install pandas
+pip3 install google-cloud-storage
 ```
 
 ## How to run
 
-1. Execute jupyter notebook
-```bash
-jupyter notebook
-```
-2. Place your excel files into 'source' folder
-3. Run main.py
-4. From the 'source' folder, it will create an 'output' folder containing files converted to csv format.
+1. Create source and destination folder
+2. Place your excel files into source folder
+3. modify the paramter as following:
+   ```bash
+   bucket_name = ""
+   source_folder_name = ""
+   output_folder_name = ""
+   ```
+5. Run main.py

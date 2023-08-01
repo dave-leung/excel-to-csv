@@ -25,7 +25,7 @@ bucket_name = ""
 source_folder_name = ""
 output_folder_name = ""
 ```
-5. Run the main.py script.
+4. Run the main.py script.
 
 ## Expected result
 

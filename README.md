@@ -20,7 +20,10 @@ pip3 install pandas
 
 ## How to run
 
+1. Execute jupyter notebook
 ```bash
-# activate jupyter notebook
 jupyter notebook
 ```
+2. Place your excel files into 'source' folder
+3. Run main.py
+4. From the 'source' folder, it will create an 'output' folder containing files converted to csv format.

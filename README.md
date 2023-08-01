@@ -13,16 +13,26 @@ Install the dependencies using `pip`:
 ```bash
 pip3 install pandas
 pip3 install google-cloud-storage
+pip3 install xlrd
+pip3 install openpyxl
 ```
 
 ## How to use
 
 1. You should create a source and destination folder in your Google Cloud Storage bucket.
-2. Place your Excel files into the source folder.
+2. Place your Excel files into the source folder. for example:
+```bash
+# list files with .xls format
+gsutil ls gs://folder/*.xls
+# move .xls files into source folder
+gsutil mv gs://folder/*.xls gs://folder/source/
+gsutil ls gs://folder/*.xlsx
+gsutil mv gs://folder/*.xlsx gs://folder/source/
+```   
 3. Modify the parameters in the main.py file as follows:
 ```bash
 bucket_name = ""
-source_folder_name = ""
+source_folder_name = "research/output"
 output_folder_name = ""
 ```
 4. Run the main.py script.

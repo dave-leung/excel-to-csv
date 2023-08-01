@@ -31,12 +31,11 @@ gsutil mv gs://folder/*.xlsx gs://folder/source/
 ```   
 3. Modify the parameters in the main.py file as follows:
 ```bash
+# you should place the full path (without 'gs://') for both source and output folder name.
 bucket_name = ""
 source_folder_name = ""
 output_folder_name = ""
 ```
-<sub> you should place the full path (without 'gs://') for both source and output folder name. </sub>
-
 4. Run the main.py script.
 
 ## Expected result

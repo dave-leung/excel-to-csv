@@ -1,0 +1,5 @@
+# Ignore Python metadata files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/

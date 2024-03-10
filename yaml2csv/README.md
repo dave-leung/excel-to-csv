@@ -1,6 +1,6 @@
 # yaml2csv
 
-yaml2csv is a Python library for dealing with word pluralization.
+yaml2csv is a Python library for convert yaml file into csv formated.
 
 ## Installation
 
@@ -12,10 +12,15 @@ pip install -r requirements.txt
 
 ## Usage
 
+Update the file path and search_key here (ignore the capture_item if you want to convert all the file). However, you need to remove the capture_item in read_yaml.
 ```python
-# Define the input and output directories
-input_dir = 'source'    <= update yaml file location as input 
-output_dir = 'output'   <= update folder location storing csv files
+yaml_file       = "./example/example.yaml"
+capture_item    = "company"
+csv_file        = "./example/example.csv"
+```
+
+```python
+read_yaml(yaml_file) <= remove capture_item here
 ```
 
 ## Contributing

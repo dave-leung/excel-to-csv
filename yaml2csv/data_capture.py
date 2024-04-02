@@ -6,10 +6,9 @@ def read_yaml_file(file_path, capture_key=None):
 
         if data is not None:
             if capture_key is None:
-#                for keys in data.items():
-#                    print(keys)
-                print(data)
-                return data
+                keys = list(data.keys())
+                values = list(data.values())
+                return(keys, values)
             else:
                 captured_item = data.get(capture_key)
                 dict = {capture_key: captured_item}

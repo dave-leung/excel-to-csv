@@ -6,5 +6,6 @@ capture_item    = "company"
 csv_file        = "./example/example.csv"
 
 if __name__ == "__main__":
-    data = read_yaml(yaml_file,capture_item)
+    data = read_yaml(yaml_file)
+    print(data)
 #    convert_csv(data, csv_file)

@@ -1,7 +1,7 @@
 import csv
 
-def convert_to_csv(data, filename):
-    if not data:
+def convert_to_csv(keys, values, filename):
+    if not keys or not values:
         print("Data is empty. Nothing to convert.")
         return
     
@@ -9,7 +9,7 @@ def convert_to_csv(data, filename):
     
     with open(filename, 'w') as csv_file:
         writer = csv.writer(csv_file)
-        writer.writerow(field_names)  # Write the field names as the header
+        writer.writerow(keys)  # Write the field names as the header
         
-        for item in data:
+        for item in values:
             writer.writerow(item)  # Write each item as a row in the CSV
